@@ -1,0 +1,291 @@
+<html>
+    <head>
+        <title>Jetwing hotels-Booking</title>
+        <link rel="stylesheet" href="assign.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <link rel="shortcut icon" href="jetwing logo.jpg" type="image/x-icon">
+    </head>
+    <body>
+        <!--Header and Navibar-->
+        <section class="Booking-Header">
+            <nav>
+                <a href="Index.html"><img src="jetwing logo.jpg"></a>
+                <div class="Navibar" id="Navibar">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="Branches page.html">Branches</a></li>
+                        <li><a href="Adventures page.html">Adventures</a></li>
+                        <li><a href="Restaurant page.html">Restaurants</a></li>
+                        <li><a href="Gallery page.html">Gallery</a></li>
+                        <li><a href="About us page.html">About us</a></li>
+                        <li><a href="Book now page.html">Book now</a></li>
+                    </ul>
+                            
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            
+        </section>
+        <!-----javascript for toggle menu------>
+        <script>
+            var Navibar = document.getElementById("Navibar");
+            function showmenu(){
+                Navibar.style.right="0";
+            }
+            function hidemenu(){
+                Navibar.style.right="-200px";
+            }
+        </script>
+        <!--adding text-->
+        <div class="Booking-text">
+            
+                <center><h1>RESERVE YOUR FORTUNE.....</h1></center>
+        </div>
+        <!-- image section-->
+        
+        <div class="Booking-Images">
+            <img src="blue-gallery-room-3-300x187.jpg">
+            <img src="blue-gallery-room-4-300x179.jpg">
+            <img src="blue-gallery-hotel-2-300x192.jpg">
+        </div>
+        <!--'Note' text section-->
+        <section class="Note">
+            <p>Note : please verify your details for booking</p>
+        </section>
+        <!--Details for booking-->
+        <section class="Details-form">
+            <table border="0" width="100%" align="center" cellpadding="20" cellspacing="20">
+                <form>
+                    <tr>
+                        <td><label for="NAME"><b>FULL NAME</b></label></td>
+                        <td><label for="NIC"><b>NATIONAL IDENTITY NUMBER</b></label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" maxlength="30" required></td>
+                        <td><input type="text" size="30" maxlength="30" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="check in date"><b>CHECK-IN DATE</b></label></td>
+                        <td><label for="check out date"><b>CHECK-OUT DATE</b></label></td>
+                    </tr>
+                    <tr>
+                        <td><select name="date">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        <select name="month">
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                        <select name="year">
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                        </select></td>
+                        <td><select name="date">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        <select name="month">
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                        <select name="year">
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Nationality"><b>NATIONALITY</b></label></td>
+                        <td><label for="City"><b>CITY</b></label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" maxlength="30" required></td>
+                        <td><input type="text" size="30" maxlength="30" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Mobile"><b>MOBILE</b></label></td>
+                        <td><label for="Email"><b>EMAIL</b></label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" maxlength="30" required></td>
+                        <td><input type="text" size="30" maxlength="30" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="children"><b>NUMBER OF CHILDREN</b></label></td>
+                        <td><label for="Adults"><b>NUMBER OF ADULTS</b></label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" maxlength="30" required></td>
+                        <td><input type="text" size="30" maxlength="30" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Choice"><b>CHOICE OF ROOMS</b></label></td>
+                        <td><label for="Number"><b>NUMBER OF ROOMS</b></label></td>
+                       
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="Choice" value="single">Single<input type="radio" name="Choice" value="Double">Double<input type="radio" name="Choice" value="Triple">Triple</td>
+                        <td><input type="text" size="30" maxlength="30" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Extra"><b>EXTRA REQUIREMENTS</b></label></td>
+                       
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="Extra" value="Wifi">Wifi<input type="radio" name="Extra" value="Garden view">Garden view<input type="radio" name="Extra" value="Pool view">Pool view</td>
+                        
+                    </tr>
+                    <tr>
+                        <td><label for="Payments"><b>PAYMENT METHODS</b></label></td>
+                       
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="Payments" value="cash">Cash<br><br><input type="radio" name="Payments" value="Card">Card<br><br><input type="radio" name="Payments" value="Cheque">Cheque</td>
+                        
+                    </tr><br><br><br><br>
+                </form> 
+                <tr>
+                    <td><label for="space"><b></b></label></td>
+                    <td><input type="submit" value="Book Adventure"><br><br><input type="Submit" value="Book now"></td>
+                </tr>          
+            </table>
+            
+        </section>
+        <!--Footer-->
+        <section class="Footer">
+            <div class="Footer-section">
+                
+                <img src="jetwing logo.jpg">
+            </div>
+            <div class="Footer-section">
+                <p>JETWING HOTELS LIMITED</p>
+                <p>JETWING HOUSE II,<br>
+                    46/26, NAVAM MAWATHA,<br>
+                    COLOMBO 02, 00200,<br>
+                    SRI LANKA</p>
+                <h1>Quick links</h1>
+                <ol type="1">
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="Branches page.html">Branches</a></li>
+                        <li><a href="Adventures page.html">Adventures</a></li>
+                        <li><a href="Restaurant page.html">Restaurants</a></li>
+                        <li><a href="Gallery page.html">Gallery</a></li>
+                        <li><a href="About us page.html">About us</a></li>
+                        <li><a href="Book now page.html">Book now</a></li>
+                </ol>
+                
+            </div>
+            <div class="Footer-section">
+                <p>
+                    OPERATING HOURS<br>
+                    MON - SAT - 8AM TO 6PM<br>
+                    SUN - 8AM TO 2PM
+                </p>
+                <ul>
+                    <li>TELEPHONE : +94 11 234 5700</li>
+                    <li>RESERVATIONS : +94 11 470 9400</li>
+                    <li>WHATSAPP  : +94 11 470 9400</li>
+                    <li>TELEPHONE (US) : +1-860-316-3828</li>
+                    <li>EMAIL: RESERVATIONS@JETWINGHOTELS.COM</li>
+                    
+                </ul>
+            </div>
+            <div class="Footer-section">
+                <div class="Footer1">
+                    <p>Find us on</p>
+                </div>
+                <div class="Footer2">
+                    <a href="https://web.facebook.com/jetwinghotels/?_rdc=1&_rdr"><img src="facebook-logo-4.png"></a>
+                    <a href="https://www.youtube.com/user/jetwinghotels"><img src="OIP (4).jpg"><a>
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fjetwinghotels%2F"><img src="R.png"></a>
+                    <a href="https://www.instagram.com/jetwinghotels/?ref=badge"><img src="R (1).png"></a>
+                </div>
+            </div>
+        </section>
+
+
+    </body>
+</html>
+
+

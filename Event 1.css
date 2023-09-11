@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/*Header*/
+.Header{
+    width: 100%;
+    height: 150px;
+    border:solid  0px;
+    display: flex;
+    background: url("R\ \(4\).jpg")
+    
+}
+.Header-box{
+    
+    
+    border: solid 0px;
+    margin: auto;
+    padding: 1%;
+}
+.Header-box img{
+    width: 50px;
+    height: 50px;
+
+}
+.Header-box h1{
+    font-size: 50px;
+    color: white;
+}
+.Header-box a{
+    text-decoration: none;
+    color: white;
+}
+.Header-box p{
+    font-size: 25px;
+    border: solid 0px;
+    
+}
+/*Navibar*/
+nav{
+    font-family: serif;
+    background: url("R\ \(4\).jpg");
+    height: 150px;
+    width: 100%;
+    color: white;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px ;
+}
+nav ul li{
+    list-style: none;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 80px;
+}
+.Logo img{
+    width: 50px;
+    height: 50px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li a:hover{
+    background-color: aquamarine;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*Media query*/
+@media (max-width:700px){
+    /*Header*/
+    .Header-box h1{
+        font-size: 20px;
+    }
+    /*Navibar*/
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 150px;
+        
+        top: 80px;
+        left: 0;
+        text-align: center;
+        
+    }
+    nav ul li{
+        display: block;
+        line-height: 40px;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a:hover{
+        background: aquamarine;
+        
+    }
+    /*Extra images*/
+    .images-extra{
+        flex-direction: column;
+    }
+    .Footer{
+        flex-direction: column;
+    }
+}
+/*Image*/
+.Image img{
+    width: 100%;
+}
+/*Adding text*/
+.Text{
+    background: url(R\ \(4\).jpg);
+    padding: 5%;
+    color: white;
+    font-family: arial;
+}
+.Text p{
+    margin-top: 30px;
+}
+/*Extra images*/
+.images-extra{
+
+    display: flex;
+    justify-content: space-between;
+    background: url(R\ \(4\).jpg);
+}
+.Img{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+   
+    
+}
+.Img img{
+    width: 400px;
+    height:400px;
+    animation:myopacity;
+    animation-play-state:running;
+    animation-iteration-count:1;
+    animation-delay:0s;
+    animation-timing-function:ease-in;
+    animation-duration:5s;
+}
+/*adding animation*/
+@keyframes myopacity{
+    100%{opacity:0;}
+}
+/*Footer*/
+.Footer{
+    
+    display: flex;
+    justify-content: space-between;
+    background: url(R\ \(4\).jpg);
+    color: white;
+}
+.Footer-section img{
+    width: 165px;
+    height: 175px;
+
+}
+.Footer-section{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+   
+    
+}
+.Footer1{
+    font-size: 15px;
+
+    
+    
+
+
+}
+.Footer2 img{
+    width: 20px;
+    height: 20px;
+
+}
+.Footer-section ol a{
+    text-decoration: none;
+    color: white;
+}

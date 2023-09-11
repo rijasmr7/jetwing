@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Header*/
+.Header{
+    width: 100%;
+    height: 150px;
+    border:solid  0px;
+    display: flex;
+     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c539e+0,2c539e+100;Blue+3D+%232 */
+    background: linear-gradient(to bottom,  rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+    
+}
+.Header-box{
+    
+    
+    border: solid 0px;
+    margin: auto;
+    padding: 1%;
+}
+.Header-box img{
+    width: 50px;
+    height: 50px;
+}   
+/*Adding animation*/
+@keyframes myrotate{
+    100%{transform:rotateZ(360deg);}
+}
+.Header-box h1{
+    font-size: 50px;
+}
+.Header-box a{
+    text-decoration: none;
+}
+.Header-box p{
+    font-size: 25px;
+    border: solid 2px;
+    background-color: bisque;
+}
+/*Navibar section*/
+nav{
+    font-family: serif;
+    background-color: bisque;
+    height: 150px;
+    width: 100%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px ;
+}
+nav ul li{
+    list-style: none;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 80px;
+}
+.Logo img{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    animation:myrotate;
+    animation-play-state:running;
+    animation-iteration-count:infinite;
+    animation-delay:0s;
+    animation-timing-function:ease-in;
+    animation-duration:3s;
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li a:hover{
+    background-color: aquamarine;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*Media query*/
+@media (max-width:700px){
+    /*Header*/
+    .Header-box h1{
+        font-size: 20px;
+    }
+    /*Navibar*/
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 150px;
+        
+        top: 80px;
+        left: 0;
+        text-align: center;
+        
+    }
+    nav ul li{
+        display: block;
+        line-height: 40px;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a:hover{
+        background: aquamarine;
+        
+    }
+    /*Extra images*/
+    .images-extra{
+        flex-direction: column;
+    }
+    .Footer{
+        flex-direction: column;
+    }
+}
+/*Image*/
+.Image img{
+    width: 100%;
+}
+/*Adding text*/
+.Text{
+    background-color: bisque;
+    padding: 5%;
+}
+.Text p{
+    margin-top: 30px;
+}
+/*Extra images*/
+.images-extra{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+}
+.Img{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+   
+    background-color: bisque;
+}
+.Img img{
+    width: 400px;
+    height:400px;
+    
+}
+
+
+/*Footer*/
+.Footer{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F2D7;
+    
+}
+.Footer-section img{
+    width: 165px;
+    height: 175px;
+
+}
+.Footer-section{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+   
+    background-color: #F7F2D7;
+}
+.Footer1{
+    font-size: 15px;
+
+    
+    
+
+
+}
+.Footer2 img{
+    width: 20px;
+    height: 20px;
+
+}
+.Footer-section ol a{
+    text-decoration: none;
+}

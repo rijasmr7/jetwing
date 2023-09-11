@@ -1,0 +1,673 @@
+/*Home page*/
+  /*Header*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.Header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("Jetwing\ 1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/*Navibar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+nav img{
+    width: 80px;
+    height: 60px;
+    margin-left: 30px;
+}
+.Navibar{
+    flex: 1;
+    text-align: right;
+}
+.Navibar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.Navibar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.Navibar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0DE4FA;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.Navibar ul li:hover::after{
+    width: 100%;
+   
+}
+nav .fa{
+    display: none;
+}
+/*Adding text*/
+.Text{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+@keyframes myopacity{
+    100%{opacity:0;}
+}
+.Text h1{
+    font-size: 30px;
+    color: #fff;
+    animation:myopacity;
+    animation-play-state:running;
+    animation-iteration-count:1;
+    animation-delay:0s;
+    animation-timing-function:ease-in;
+    animation-duration:1s;
+}
+.Text p{
+    color: bisque;
+    font-size: 20px;
+}
+
+
+
+
+.Main{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.Main-section{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    background-color: #F7F2D7;
+}
+h1{
+    align-items: center;
+}
+.Footer{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F2D7;
+    
+}
+.Footer-section img{
+    width: 165px;
+    height: 175px;
+
+}
+.Footer-section{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+   
+    background-color: #F7F2D7;
+}
+.Footer1{
+    font-size: 15px;
+
+    
+    
+
+
+}
+.Footer2 img{
+    width: 20px;
+    height: 20px;
+
+}
+.Footer-section ol a{
+    text-decoration: none;
+}
+/*Gallery page*/
+.Gallery-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("photo-gallery-desktop-large.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.Gallery-text{
+    align-items: center;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    margin-top: 50px;
+    background-color: #F7F2D7;
+}
+
+
+
+.Images{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    margin-top: 50px;
+    background-color: #F7F2D7;
+    
+    box-sizing: border-box;
+    display: flex;
+    
+    
+    
+}
+.Images img{
+    width: 30%;
+    margin-left: 34px;
+}
+
+
+
+
+
+.Images2{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    margin-top: 50px;
+    background-color: #F7F2D7;
+    display: flex;
+    box-sizing: border-box;
+    
+}
+.Images2 img{
+    width: 30%;
+    margin-left: 34px;
+}
+/*About us Page*/
+/* header*/
+.About-us-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("luxury-villas-sri-lanka-desktop-large.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/*adding text*/
+.About-us-text{
+    align-items: center;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    margin-top: 50px;
+    background-color: #F7F2D7;
+}
+.About-us-text1{
+    align-items: center;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    margin-top: 50px;
+    background-color: #F7F2D7;
+}
+.About-us-text2{
+    align-items: center;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    margin-top: 50px;
+    background-color: #F7F2D7;
+}
+/*Image section*/
+.About-image{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.About-image1{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    background-color: #F7F2D7;
+    
+    
+}
+.About-image1 img{
+    width: 300px;
+    height: 300px;
+}
+.About-image1 p{
+    text-align: center;
+}
+/*Adventures page*/
+/*Header*/
+.Adventures-Header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url("jungle-cabin-exterior-1920x656-1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+/*Text*/
+.Ad-text{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+.Ad-text1{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    background-color: #F7F2D7;
+}
+.Ad-text1 img{
+    width: 500px;
+    height: 500px;
+}
+.Ad-text1 h1,p{
+    margin-left: 50px;
+}
+/*Adventure-adding image*/
+.Ad-image{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.Ad-image1{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    background-color: #F7F2D7;
+}
+/*Map*/
+iframe{
+    width: 100%;
+}
+/*Restaurant page*/
+ /*Header*/
+ .Restaurant-Header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("862730.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+ /*section heading*/
+ .Restaurant-Heading{
+    margin: auto;
+    margin-top: 30px;
+    background-color:#F7F2D7 ;
+
+ }
+ .Restaurant-Heading h1{
+    font-size: 30px;
+    font-family: serif;
+ }
+ /*List of restaurant type*/
+ .Restaurant-type{
+    padding: 5%;
+    font-size: 20px;
+    background-color: #F7F2D7;
+    font-family: Arial, Helvetica, sans-serif;
+    
+ }
+ /*Restaurant type 1*/
+ .Restaurant1{
+    margin-top: 30px;
+    background-color: #F7F2D7;
+ }
+ .Type1-1 img{
+    width: 80%;
+    margin-top: 20px;
+
+ }
+ .Type1-2{
+    padding: 5%;
+    font-size: 20px;
+ }
+ /*Restaurant type 2*/
+ .Restaurant2{
+    margin-top: 30px;
+    background-color: #F7F2D7;
+ }
+ .Type2-1 img{
+    width: 80%;
+    margin-top: 20px;
+
+ }
+ .Type2-2{
+    padding: 5%;
+    font-size: 20px;
+ }
+ /*Restaurant type 3*/
+ .Restaurant3{
+    margin-top: 30px;
+    background-color: #F7F2D7;
+ }
+ .Type3-1 img{
+    width: 80%;
+    margin-top: 20px;
+
+ }
+ .Type3-2{
+    padding: 5%;
+    font-size: 20px;
+ }
+ /*Events section*/
+ .Restaurant-events{
+    margin: auto;
+    margin-top: 30px;
+    background-color:#F7F2D7 ;
+ }
+ .Restaurant-events h1{
+    font-size: 30px;
+    font-family: serif;
+ }
+ /*List of Events*/
+ .Restaurant-events-link{
+    padding: 5%;
+    font-size: 20px;
+    background-color: #F7F2D7;
+    font-family: Arial, Helvetica, sans-serif;
+    
+ }
+ .Restaurant-events-link a{
+    text-decoration: none;
+    
+ }
+/*Branches page*/
+ /*Header*/
+ .Branches-Header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("kaduruketha-Round-Tour-Packages-desktop-large.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+ /*section- Heading*/
+ .Branches-heading{
+    margin: auto;
+    margin-top: 30px;
+    background-color:#F7F2D7 ;
+    margin-bottom: 10px;
+
+ }
+ .Branches-heading h1{
+    font-size: 30px;
+    font-family: serif;
+ }
+ /*Branch 1*/
+ .Branch1{
+    margin-top: 30px;
+    background-color: #F7F2D7;
+ }
+ .Branches1-1 img{
+    width: 80%;
+    margin-top: 20px;
+
+ }
+ .Branches1-2{
+    padding: 5%;
+    font-size: 20px;
+ }
+ /*Branch 2*/
+ .Branch2{
+    margin-top: 30px;
+    background-color: #F7F2D7;
+ }
+ .Branch2-1 img{
+    width: 80%;
+    margin-top: 20px;
+
+ }
+ .Branch2-2{
+    padding: 5%;
+    font-size: 20px;
+ }
+ /*Branch 3*/
+ .Branch3{
+    margin-top: 30px;
+    background-color: #F7F2D7;
+ }
+ .Branch3-1 img{
+    width: 80%;
+    margin-top: 20px;
+
+ }
+ .Branch3-2{
+    padding: 5%;
+    font-size: 20px;
+ }
+ /*Branch 4*/
+ .Branch4{
+    margin-top: 30px;
+    background-color: #F7F2D7;
+ }
+ .Branch4-1 img{
+    width: 80%;
+    margin-top: 20px;
+
+ }
+ .Branch4-2{
+    padding: 5%;
+    font-size: 20px;
+ }
+ /*Map of the branches*/
+ iframe{
+    width: 100%;
+ }
+ /*summary table*/
+ .Branches-table{
+    margin: auto;
+    margin-top: 30px;
+ }
+ .Branches-table table img{
+    width: 100px;
+    height: 100px;
+ }
+ /*Book now page*/
+  /*Header*/
+.Booking-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url("private-villas-in-sri-lanka-categorythumbnail.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/*Image section*/
+.Booking-Images{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    margin-top: 50px;
+    background-color: #F7F2D7;
+    
+    box-sizing: border-box;
+    display: flex;
+    
+    
+    
+}
+.Booking-Images img{
+    width: 30%;
+    margin-left: 34px;
+}
+/*Booking details section*/
+.Details-form{
+    padding: 5%;
+    
+    margin-top: 30px;
+    background-color: #F7F2D7;
+}
+/*Adding media query for all  main pages*/
+@media(max-width:700px){
+    /*Home page*/
+    .Text h1{
+        font-size: 12px;
+
+    }
+    .Navibar ul li{
+        display: block;
+    }
+    .Navibar{
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        background: #ED7C58;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        margin: 10px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .Navibar ul{
+        padding: 30px;
+    }
+    #Text-box{
+        font-size: 12px;
+        display: inline-block;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .Footer{
+        flex-direction: column;
+    }
+    /*Gallery page*/
+    .Gallery-text{
+        flex-direction: column;
+    }
+    .Images{
+        flex-direction: column;
+    }
+    .Images2{
+        flex-direction: column;
+    }
+    /*About us page*/
+    .About-us-text{
+        flex-direction: column;
+    }
+    .About-us-text1{
+        flex-direction: column;
+    }
+    .About-us-text2{
+        flex-direction: column;
+    }
+    .About-image{
+        flex-direction: column;
+    }
+    .About-image1{
+        flex-direction: column;
+    }
+    /*Adventure page*/
+    .Ad-text{
+        flex-direction: column;
+    }
+    .Ad-text1{
+        flex-direction: column;
+    }
+    .Ad-image{
+        flex-direction: column;
+    }
+    .Ad-image1{
+        flex-direction: column;
+    }
+    iframe{
+        flex-direction: column;
+    }
+    /*Restaurant page*/
+    .Restaurant-Heading{
+        flex-direction: column;
+
+    }
+    .Restaurant1{
+        flex-direction: column;
+    }
+    .Restaurant2{
+        flex-direction: column;
+    }
+    .Restaurant3{
+        flex-direction: column;
+    }
+    .Restaurant-events{
+        flex-direction: column;
+    }
+    /*Branches page*/
+    .Branches-heading{
+        flex-direction: column;
+    }
+    .Branch1{
+        flex-direction: column;
+    }
+    .Branch2{
+        flex-direction: column;
+    }
+    .Branch3{
+        flex-direction: column;
+    }
+    .Branch4{
+        flex-direction: column;
+    }
+    iframe{
+        flex-direction: column;
+    }
+    .Branches-table{
+        flex-direction: column;
+    }
+    /*Book now page*/
+    .Booking-text{
+        flex-direction: column;
+    }
+    .Booking-Images{
+        flex-direction: column;
+    }
+    .Details-form{
+        flex-direction: column;
+        font-size: 10px;
+        
+    }
+    
+
+
+
+}
+    
