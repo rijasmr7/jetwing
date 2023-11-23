@@ -54,183 +54,533 @@
             <p>Note : please verify your details for booking</p>
         </section>
         <!--Details for booking-->
-        <section class="Details-form">
-            <table border="0" width="100%" align="center" cellpadding="20" cellspacing="20">
-                <form>
-                    <tr>
-                        <td><label for="NAME"><b>FULL NAME</b></label></td>
-                        <td><label for="NIC"><b>NATIONAL IDENTITY NUMBER</b></label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" size="30" maxlength="30" required></td>
-                        <td><input type="text" size="30" maxlength="30" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="check in date"><b>CHECK-IN DATE</b></label></td>
-                        <td><label for="check out date"><b>CHECK-OUT DATE</b></label></td>
-                    </tr>
-                    <tr>
-                        <td><select name="date">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                            <option>13</option>
-                            <option>14</option>
-                            <option>15</option>
-                            <option>16</option>
-                            <option>17</option>
-                            <option>18</option>
-                            <option>19</option>
-                            <option>20</option>
-                            <option>21</option>
-                            <option>22</option>
-                            <option>23</option>
-                            <option>24</option>
-                            <option>25</option>
-                            <option>26</option>
-                            <option>27</option>
-                            <option>28</option>
-                            <option>29</option>
-                            <option>30</option>
-                            <option>31</option>
-                        </select>
-                        <select name="month">
-                            <option>January</option>
-                            <option>February</option>
-                            <option>March</option>
-                            <option>April</option>
-                            <option>May</option>
-                            <option>June</option>
-                            <option>July</option>
-                            <option>August</option>
-                            <option>September</option>
-                            <option>October</option>
-                            <option>November</option>
-                            <option>December</option>
-                        </select>
-                        <select name="year">
-                            <option>2023</option>
-                            <option>2024</option>
-                            <option>2025</option>
-                        </select></td>
-                        <td><select name="date">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                            <option>13</option>
-                            <option>14</option>
-                            <option>15</option>
-                            <option>16</option>
-                            <option>17</option>
-                            <option>18</option>
-                            <option>19</option>
-                            <option>20</option>
-                            <option>21</option>
-                            <option>22</option>
-                            <option>23</option>
-                            <option>24</option>
-                            <option>25</option>
-                            <option>26</option>
-                            <option>27</option>
-                            <option>28</option>
-                            <option>29</option>
-                            <option>30</option>
-                            <option>31</option>
-                        </select>
-                        <select name="month">
-                            <option>January</option>
-                            <option>February</option>
-                            <option>March</option>
-                            <option>April</option>
-                            <option>May</option>
-                            <option>June</option>
-                            <option>July</option>
-                            <option>August</option>
-                            <option>September</option>
-                            <option>October</option>
-                            <option>November</option>
-                            <option>December</option>
-                        </select>
-                        <select name="year">
-                            <option>2023</option>
-                            <option>2024</option>
-                            <option>2025</option>
-                        </select></td>
-                    </tr>
-                    <tr>
-                        <td><label for="Nationality"><b>NATIONALITY</b></label></td>
-                        <td><label for="City"><b>CITY</b></label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" size="30" maxlength="30" required></td>
-                        <td><input type="text" size="30" maxlength="30" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="Mobile"><b>MOBILE</b></label></td>
-                        <td><label for="Email"><b>EMAIL</b></label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" size="30" maxlength="30" required></td>
-                        <td><input type="text" size="30" maxlength="30" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="children"><b>NUMBER OF CHILDREN</b></label></td>
-                        <td><label for="Adults"><b>NUMBER OF ADULTS</b></label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" size="30" maxlength="30" required></td>
-                        <td><input type="text" size="30" maxlength="30" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="Choice"><b>CHOICE OF ROOMS</b></label></td>
-                        <td><label for="Number"><b>NUMBER OF ROOMS</b></label></td>
+        <img src="240_F_154164212_wxq2d5eFDp8nQSez8zYFWKZaXgq6YaUK.jpg" alt="booking image" id="boo">
+        <div class="bookingSection">
+        <section class="booking">
+            <fieldset>
+                <legend>Hotel bookings</legend>
+                <form action="" id="hotelForm">
+                    <img src="room.png" alt="room booking image"><br><br>
+                    <p>
+                        <label for="checkInDate">-CHECK-IN DATE: </label><br>
+                        <input type="date" id="checkInDate" name="checkInDate">
+                    </p><br>
+                    <p>
+                        <label for="checkOutDate">-CHECK-OUT DATE: </label><br>
+                        <input type="date" id="checkOutDate" name="checkOutDate">
+                    </p><br>
+                    <p>
+                        <label for="fullName">-FULL NAME: </label><br>
+                        <input type="text" id="fullName" name="fullName" value="" maxlength="50" size="50">
+                    </p><br>
+                    <p>
+                        <label for="nic">-NATIONAL IDENTITY NUMBER: </label><br>
+                        <input type="number" id="nic" name="nic" value="">
+                    </p><br>
+                    <p>
+                        <label for="nationality">-NATIONALITY: </label><br>
+                        <input type="" id="nationality" name="nationality" value="" size="20" >
+                    </p><br>
+                    <p>
+                        <label for="city">-CITY: </label><br>
+                        <input type="text" id="city" name="city" value="" size="15">
+                    </p><br>
+                    <p>
+                        <label for="mobile">-MOBILE: </label><br>
+                        <input type="tel" id="mobile" name="mobile" value="" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}">
+                    </p><br>
+                    <p>
+                        <label for="email">-EMAIL: </label><br>
+                        <input type="text" id="email" name="email" value="" size="30">
+                    </p><br>
+                    <p>
+                        <label for="choice">-CHOICE OF ROOMS:</label>
+                    </p><br>
+                    <p>
+                        <label for="single">Single</label>
+                        <input type="radio" id="single" name="choice" value="single" checked>
+                    </p>
+                    <p>
+                        <label for="double">Double</label>
+                        <input type="radio" id="double" name="choice" value="double">
+                    </p>
+                    <p>
+                        <label for="triple">Triple</label>
+                        <input type="radio" id="triple" name="choice" value="triple">
+                    </p><br>
+                    <p>
+                        <label for="numberOfRooms">-NUMBER OF ROOMS: </label><br>
+                        <input type="number" id="numberOfRooms" name="numberOfRooms" value="" min="0">
+                    </p><br>
+                    <p>
+                        <label for="numberOfSlAdults">-NUMBER OF SRILANKAN ADULTS: </label><br>
+                        <input type="number" id="numberOfSlAdults" name="numberOfSlAdults" value="" min="0">
+                    </p><br>
+                    <p>
+                        <label for="numberOfSlChildren">-NUMBER OF SRILANKAN CHILDREN: </label><br>
+                        <input type="number" id="numberOfSlChildren" name="numberOfSlChildren" value="" min="0">
+                    </p><br>
+                    <p>
+                        <label for="numberOfForeignAdults">-NUMBER OF FOREIGN ADULTS: </label><br>
+                        <input type="number" id="numberOfForeignAdults" name="numberOfForeignAdults" value="" min="0">
+                    </p><br>
+                    <p>
+                        <label for="numberOfForeignChildren">-NUMBER OF FOREIGN CHILDREN: </label><br>
+                        <input type="number" id="numberOfForeignChildren" name="numberOfForeignSlChildren" value="" min="0">
+                    </p><br>
+                    <p>
+                        <label for="numberOfKidsAbove5YearsOfAge">-NUMBER OF KIDS ABOVE 5 YEARS OF AGE: </label><br>
+                        <input type="number" id="numberOfKidsAbove5YearsOfAge" name="numberOfKidsAbove5YearsOfAge" value="" min="0">
+                    </p><br>
+                    <p>
+                        <label for="arrivalTime">-ARRIVAL TIME: </label><br>
+                        <input type="time" id="arrivalTime" name="arrivalTime" value="">
+                    </p><br>
+                    <p>
+                        <label for="leavingTime">-LEAVING TIME: </label><br>
+                        <input type="time" id="leavingTime" name="leavingTime" value="">
+                    </p><br>
+                    <p>
+                        <label for="durationOfTheStay">-DURATION OF THE STAY(Hours): </label><br>
+                        <input type="number" id="durationOfTheStay" name="durationOfTheStay" value="" min="0">
+                    </p><br>
+                    <p>
+                        <label for="extraRequirements">-EXTRA REQUIREMENTS: </label>
+                    </p><br>
+                    <p>
+                        <label for="wifi">Wifi</label>
+                        <input type="checkbox" id="wifi" name="extraRequirements" value="wifi" checked>
+                    </p>
+                    <p>
+                        <label for="poolView">Pool view</label>
+                        <input type="radio" id="poolView" name="extraRequirements" value="poolView">
+                    </p>
+                    <p>
+                        <label for="gardenView">Garden view</label>
+                        <input type="radio" id="gardenView" name="extraRequirements" value="gardenView">
+                    </p><br>
+                    <p>
+                        <label for="extraBed">-DO YOU WANT EXTRA BED? </label>
+                    </p><br>
+                    <p>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="extraBed" value="yes">
+                    </p>
+                    <p>
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="extraBed" value="no">
+                    </p><br>
+                    <p>
+                        <label for="promoCode">-PROMO CODE: </label><br>
+                        <input type="text" id="promoCode" name="promoCode" value="" placeholder="Enjoy 5% off">
+                    </p><br>
+                    <p>
+                        <label for="paymentMethod">-PAYMENT METHOD: </label>
+                    </p><br>
+                    <p>
+                        <label for="cash">Cash</label> <input type="radio" id="cash" name="paymentMethod" value="cash" checked>
                        
+                    </p>
+                    <p>
+                        <label for="cheque">Cheque</label>
+                        <input type="radio" id="cheque" name="paymentMethod" value="cheque">
+                    </p>
+                    <p>
+                        <label for="card">Card</label>
+                        <input type="radio" id="card" name="paymentMethod" value="card">
+                    </p><br>
+                </form>
+            </fieldset>
+        </section>
+        <section class="booking1">
+            <fieldset>
+                <legend>Adventure booking</legend>
+                <form action="" id="adventureForm">
+                    <img src="Beach Photo Adventure Direct Mail Postcard.png" alt="Adventure booking image"><br><br>
+                    <p>
+                        <label for="checkindate">-CHECK-IN DATE: </label><br>
+                        <input type="date" id="checkindate" name="checkindate">
+                    </p><br>
+                    <p>
+                        <label for="checkoutdate">-CHECK-OUT DATE: </label><br>
+                        <input type="date" id="checkoutdate" name="checkoutdate">
+                    </p><br>
+                    <p>
+                        <label for="fullname">-FULL NAME: </label><br>
+                        <input type="text" id="fullname" name="fullname" value="" maxlength="50" size="50">
+                    </p><br>
+                    <p>
+                        <label for="Nic">-NATIONAL IDENTITY NUMBER: </label><br>
+                        <input type="number" id="Nic" name="Nic" value="">
+                    </p><br>
+                    <p>
+                        <label for="Nationality1">-NATIONALITY: </label><br>
+                        <input type="" id="Nationality" name="Nationality" value="" size="20" >
+                    </p><br>
+                    <p>
+                        <label for="City">-CITY: </label><br>
+                        <input type="text" id="City" name="City" value="" size="15">
+                    </p><br>
+                    <p>
+                        <label for="Mobile">-MOBILE: </label><br>
+                        <input type="tel" id="Mobile" name="Mobile" value="" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}">
+                    </p><br>
+                    <p>
+                        <label for="Email">-EMAIL: </label><br>
+                        <input type="text" id="Email" name="Email" value="" size="30">
+                    </p><br>
+                    <p>
+                        <label for="NeedOfGuidanceForDiving">-Do you need guide during diving session: </label>
+                    </p><br>
+                    <p>
+                        <label for="Yes">Yes</label>
+                        <input type="radio" id="Yes" name="NeedOfGuidanceForDiving" value="Yes">
+                    </p>
+                    <p>
+                        <label for="No">No</label>
+                        <input type="radio" id="No" name="NeedOfGuidanceForDiving" value="No">
+                    </p><br>
+                    <p>
+                        <label for="NumberOfSlAdults">-NUMBER OF SRILANKAN ADULTS: </label><br>
+                        <input type="number" id="NumberOfSlAdults" name="NumberOfSlAdults" value="" min="0">
+                    </p><br>
+                    <p>
+                        <label for="NumberOfSlChildren">-NUMBER OF SRILANKAN CHILDREN(Above 5 years of age): </label><br>
+                        <input type="number" id="NumberOfSlChildren" name="NumberOfSlChildren" value="" min="0">
+                    </p><br>
+                    <p>
+                        <label for="NumberOfForeignAdults">-NUMBER OF FOREIGN ADULTS: </label><br>
+                        <input type="number" id="NumberOfForeignAdults" name="NumberOfForeignAdults" value="" min="0">
+                    </p><br>
+                    <p>
+                        <label for="NumberOfForeignChildren">-NUMBER OF FOREIGN CHILDREN(Above 5 years of age): </label><br>
+                        <input type="number" id="NumberOfForeignChildren" name="NumberOfForeignSlChildren" value="" min="0">
+                    </p><br>
+                    <p>
+                        <label for="ArrivalTime">-ARRIVAL TIME: </label><br>
+                        <input type="time" id="ArrivalTime" name="ArrivalTime" value="">
+                    </p><br>
+                    <p>
+                        <label for="LeavingTime">-LEAVING TIME: </label><br>
+                        <input type="time" id="LeavingTime" name="LeavingTime" value="">
+                    </p><br>
+                    <p>
+                        <label for="DurationOfTheStay">-DURATION OF THE STAY(Hours): </label><br>
+                        <input type="number" id="DurationOfTheStay" name="DurationOfTheStay" value="" min="0">
+                    </p><br>
+                    <p>
+                        <label for="PaymentMethod">-PAYMENT METHOD: </label>
+                    </p><br>
+                    <p>
+                        <label for="Cash">Cash</label> 
+                        <input type="radio" id="Cash" name="PaymentMethod" value="Cash" checked>
+                    </p>
+                    <p>
+                        <label for="Cheque">Cheque</label>
+                        <input type="radio" id="Cheque" name="PaymentMethod" value="Cheque">
+                    </p>
+                    <p>
+                        <label for="Card">Card</label>
+                        <input type="radio" id="Card" name="PaymentMethod" value="Card">
+                    </p><br>
+                </form>
+            </fieldset>
+        </section>
+        </div>
+        <section class="roomTable">
+            <fieldset>
+                <legend>ROOM BOOKING DETAILS</legend>
+                <table id="roomTable1">
+                    <caption>Details of room booking</caption>
+                    <tr>
+                        <th>Title</th>
+                        <th>Details</th>
                     </tr>
                     <tr>
-                        <td><input type="radio" name="Choice" value="single">Single<input type="radio" name="Choice" value="Double">Double<input type="radio" name="Choice" value="Triple">Triple</td>
-                        <td><input type="text" size="30" maxlength="30" required></td>
+                        <td>Check-in-date</td>
+                        <td><span id="-checkInDate"></span></td>
                     </tr>
                     <tr>
-                        <td><label for="Extra"><b>EXTRA REQUIREMENTS</b></label></td>
-                       
+                        <td>Check-out-date</td>
+                        <td><span id="-checkOutDate"></span></td>
                     </tr>
                     <tr>
-                        <td><input type="radio" name="Extra" value="Wifi">Wifi<input type="radio" name="Extra" value="Garden view">Garden view<input type="radio" name="Extra" value="Pool view">Pool view</td>
-                        
+                        <td>Full name</td>
+                        <td><span id="-fullName"></span></td>
                     </tr>
                     <tr>
-                        <td><label for="Payments"><b>PAYMENT METHODS</b></label></td>
-                       
+                        <td>National identity number</td>
+                        <td><span id="-nic"></span></td>
                     </tr>
                     <tr>
-                        <td><input type="radio" name="Payments" value="cash">Cash<br><br><input type="radio" name="Payments" value="Card">Card<br><br><input type="radio" name="Payments" value="Cheque">Cheque</td>
-                        
-                    </tr><br><br><br><br>
-                </form> 
-                <tr>
-                    <td><label for="space"><b></b></label></td>
-                    <td><input type="submit" value="Book Adventure"><br><br><input type="Submit" value="Book now"></td>
-                </tr>          
-            </table>
-            
+                        <td>Nationality</td>
+                        <td><span id="-nationality"></span></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td><span id="-city"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td><span id="-mobile"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><span id="-email"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Choice of rooms</td>
+                        <td><span id="-choiceOfrooms"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Cost per room</td>
+                        <td><span id="-costPerRoom"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Number of rooms</td>
+                        <td><span id="-numberOfRooms"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Cost of total rooms</td>
+                        <td><span id="-costOfTotalRooms"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Sriankan adults</td>
+                        <td><span id="-numberOfSlAdults"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Srilankan children</td>
+                        <td><span id="-numberOfSlChildren"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Number of foreign adults</td>
+                        <td><span id="-numberOfForeignAdults"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Number of foreign children</td>
+                        <td><span id="-numberOfForeignchildren"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Number of kids above 5 years of age</td>
+                        <td><span id="-numberOfKids5"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Meals charge(kids above 5 years of age)</td>
+                        <td><span id="-choice of rooms"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Arrival time</td>
+                        <td><span id="-arrivalTime"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Leaving time</td>
+                        <td><span id="-leavingTime"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Duration of the stay(Hours)</td>
+                        <td><span id="-durationOfTheStay"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Extra bed</td>
+                        <td><span id="-extraBed"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Extra bed charge</td>
+                        <td><span id="-extraBedCharege"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Wifi</td>
+                        <td><span id="-wifi"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Pool view/Gardenview</td>
+                        <td><span id="-poolGarden"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Promo code</td>
+                        <td><span id="-promoCode"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Payment method</td>
+                        <td><span id="-paymentMethod"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Current booking(s)</td>
+                        <td><span id="-currentBooking"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Cost of the current booking</td>
+                        <td><span id="-costOfCurrent"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Overall booking(s)</td>
+                        <td><span id="-overallBooking"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Cost of overall booking</td>
+                        <td><span id="-costOfOverall"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Total bill</td>
+                        <td><span id="-totalBill"></span></td>
+                    </tr>
+                </table>
+                <button id="roomButton">Book now</button>
+                <button id="favoriteButton">Add this order to favorites&#128150;</button>
+                <button id="loyaltyButton">Check the loyalty points</button>
+                <p id="loyaltyOutput"></p>
+                <p id="roomOutput"></p>
+            </fieldset>
+        </section>
+        <section class="adventureTable">
+            <fieldset>
+                <legend>Adventure booking details</legend>
+                <table id="adventureTable1">
+                    <caption>Details of adventure booking</caption>
+                    <tr>
+                        <th>Title</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Check-in-date</td>
+                        <td><span id="--checkInDate"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Check-out-date</td>
+                        <td><span id="--checkOutDate"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Name of the adventure</td>
+                        <td id="--adventureName">DIVING AT JETWING</td>
+                    </tr>
+                    <tr>
+                        <td>Full name</td>
+                        <td><span id="--fullName"></span></td>
+                    </tr>
+                    <tr>
+                        <td>National identity number</td>
+                        <td><span id="--nic"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Nationality</td>
+                        <td><span id="--nationality"></span></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td><span id="--city"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td><span id="--mobile"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><span id="--email"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Cost per Srilankan adult</td>
+                        <td><span id="--costPerSlAdult"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Srilankan adults</td>
+                        <td><span id="--noSlAdults"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Total cost for Srilankan adults</td>
+                        <td><span id="--costSlAdults"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Cost per Srilankan child</td>
+                        <td><span id="--costPerSlChild"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Srilankan children</td>
+                        <td><span id="--noSlChildren"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Total cost for Srilankan children</td>
+                        <td><span id="--costSlChildren"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Cost per foreign adult</td>
+                        <td><span id="--costPerForeignAdult"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Number of foreign adults</td>
+                        <td><span id="--noForeignAdults"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Total cost for foreign adults</td>
+                        <td><span id="--costForeignAdults"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Cost per foreign child</td>
+                        <td><span id="--costPerForeignChild"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Number of foreign children</td>
+                        <td><span id="--noForeignChildren"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Total cost for foreign children</td>
+                        <td><span id="--costForeignChildren"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Guide charge per adult</td>
+                        <td><span id="--guidePerAdult"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Total Guide charge for adults</td>
+                        <td><span id="--guideChargeAdult"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Guide charge per kid</td>
+                        <td><span id="--guidePerKid"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Total Guide charge for kids</td>
+                        <td><span id="--guideChargeKids"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Arrival time</td>
+                        <td><span id="--arrivalTime"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Leaving time</td>
+                        <td><span id="--leavingTime"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Duration of the stay(Hours)</td>
+                        <td><span id="--durationOfTheStay"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Payment method</td>
+                        <td><span id="--paymentMethod"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Current booking(s)</td>
+                        <td><span id="--currentBooking"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Cost of the current booking</td>
+                        <td><span id="--costOfCurrent"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Overall booking(s)</td>
+                        <td><span id="--overallBooking"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Cost of overall booking</td>
+                        <td><span id="--costOfOverall"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Total bill</td>
+                        <td><span id="--totalBill"></span></td>
+                    </tr>
+                </table>
+                <button id="adventureButton">Book adventure</button>
+                <p id="adventureOutput"></p>
+            </fieldset>
         </section>
         <!--Footer-->
         <section class="Footer">
