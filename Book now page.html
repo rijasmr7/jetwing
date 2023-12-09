@@ -4,6 +4,12 @@
         <link rel="stylesheet" href="assign.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
         <link rel="shortcut icon" href="jetwing logo.jpg" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Teko:wght@300;500&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--Header and Navibar-->
@@ -39,22 +45,11 @@
         </script>
         <!--adding text-->
         <div class="Booking-text">
-            
-                <center><h1>RESERVE YOUR FORTUNE.....</h1></center>
+            <center>Jetwing Hotels offers a luxurious and enchanting escape for discerning travelers seeking unparalleled hospitality in Sri Lanka. Renowned for its commitment to sustainable tourism, each Jetwing property reflects a harmonious blend of modern comfort and authentic cultural experiences. Whether nestled amid lush landscapes or overlooking pristine beaches, Jetwing Hotels captivate guests with elegant accommodations, world-class amenities, and impeccable service. From the vibrant streets of Colombo to the serene hills of Kandy and the breathtaking coastal vistas in Galle, Jetwing's diverse portfolio ensures a tailored experience for every traveler. Immerse yourself in the warm hospitality, exquisite cuisine, and eco-friendly practices that define Jetwing Hotels, promising an unforgettable stay that seamlessly combines luxury with a deep appreciation for Sri Lanka's rich heritage and natural beauty. Book your stay with Jetwing for an indulgent retreat that transcends expectations.</center>
         </div>
-        <!-- image section-->
-        
-        <div class="Booking-Images">
-            <img src="blue-gallery-room-3-300x187.jpg">
-            <img src="blue-gallery-room-4-300x179.jpg">
-            <img src="blue-gallery-hotel-2-300x192.jpg">
-        </div>
-        <!--'Note' text section-->
-        <section class="Note">
-            <p>Note : please verify your details for booking</p>
-        </section>
         <!--Details for booking-->
-        <img src="240_F_154164212_wxq2d5eFDp8nQSez8zYFWKZaXgq6YaUK.jpg" alt="booking image" id="boo">
+        <img src="booking.jpg" alt="booking image" id="boo">
+        <!--Room booking form-->
         <div class="bookingSection">
         <section class="booking">
             <fieldset>
@@ -79,7 +74,7 @@
                     </p><br>
                     <p>
                         <label for="nationality">-NATIONALITY: </label><br>
-                        <input type="" id="nationality" name="nationality" value="" size="20" >
+                        <input type="text" id="nationality" name="nationality" value="" size="20" >
                     </p><br>
                     <p>
                         <label for="city">-CITY: </label><br>
@@ -94,11 +89,11 @@
                         <input type="text" id="email" name="email" value="" size="30">
                     </p><br>
                     <p>
-                        <label for="choice">-CHOICE OF ROOMS:</label>
+                        <label for="choiceOfRooms">-CHOICE OF ROOMS:</label>
                     </p><br>
                     <p>
                         <label for="single">Single</label>
-                        <input type="radio" id="single" name="choice" value="single" checked>
+                        <input type="radio" id="single" name="choice" value="single">
                     </p>
                     <p>
                         <label for="double">Double</label>
@@ -149,7 +144,7 @@
                     </p><br>
                     <p>
                         <label for="wifi">Wifi</label>
-                        <input type="checkbox" id="wifi" name="extraRequirements" value="wifi" checked>
+                        <input type="checkbox" id="wifi" name="wifi" value="wifi">
                     </p>
                     <p>
                         <label for="poolView">Pool view</label>
@@ -178,8 +173,7 @@
                         <label for="paymentMethod">-PAYMENT METHOD: </label>
                     </p><br>
                     <p>
-                        <label for="cash">Cash</label> <input type="radio" id="cash" name="paymentMethod" value="cash" checked>
-                       
+                        <label for="cash">Cash</label> <input type="radio" id="cash" name="paymentMethod" value="cash">
                     </p>
                     <p>
                         <label for="cheque">Cheque</label>
@@ -192,6 +186,7 @@
                 </form>
             </fieldset>
         </section>
+        <!--Adventure booking form-->
         <section class="booking1">
             <fieldset>
                 <legend>Adventure booking</legend>
@@ -211,7 +206,7 @@
                     </p><br>
                     <p>
                         <label for="Nic">-NATIONAL IDENTITY NUMBER: </label><br>
-                        <input type="number" id="Nic" name="Nic" value="">
+                        <input type="text" id="Nic" name="Nic" value="">
                     </p><br>
                     <p>
                         <label for="Nationality1">-NATIONALITY: </label><br>
@@ -230,17 +225,6 @@
                         <input type="text" id="Email" name="Email" value="" size="30">
                     </p><br>
                     <p>
-                        <label for="NeedOfGuidanceForDiving">-Do you need guide during diving session: </label>
-                    </p><br>
-                    <p>
-                        <label for="Yes">Yes</label>
-                        <input type="radio" id="Yes" name="NeedOfGuidanceForDiving" value="Yes">
-                    </p>
-                    <p>
-                        <label for="No">No</label>
-                        <input type="radio" id="No" name="NeedOfGuidanceForDiving" value="No">
-                    </p><br>
-                    <p>
                         <label for="NumberOfSlAdults">-NUMBER OF SRILANKAN ADULTS: </label><br>
                         <input type="number" id="NumberOfSlAdults" name="NumberOfSlAdults" value="" min="0">
                     </p><br>
@@ -257,6 +241,25 @@
                         <input type="number" id="NumberOfForeignChildren" name="NumberOfForeignSlChildren" value="" min="0">
                     </p><br>
                     <p>
+                        <label for="NeedOfGuidanceForDiving">-Do you need guide during diving session: </label>
+                    </p><br>
+                    <p>
+                        <label for="Yes">Yes</label>
+                        <input type="radio" id="Yes" name="NeedOfGuidanceForDiving" value="Yes">
+                    </p>
+                    <p>
+                        <label for="No">No</label>
+                        <input type="radio" id="No" name="NeedOfGuidanceForDiving" value="No">
+                    </p><br>
+                    <p>
+                        <label for="NumberOfAdults">-NUMBER OF ADULTS NEED GUIDANCE: </label><br>
+                        <input type="number" id="NumberOfAdults1" name="NumberOfAdults1" value="" min="0">
+                    </p><br>
+                    <p>
+                        <label for="NumberOfChildren">-NUMBER OF CHILDREN NEED GUIDANCE(Above 5 years of age): </label><br>
+                        <input type="number" id="NumberOfChildren1" name="NumberOfChildren1" value="" min="0">
+                    </p><br>
+                    <p>
                         <label for="ArrivalTime">-ARRIVAL TIME: </label><br>
                         <input type="time" id="ArrivalTime" name="ArrivalTime" value="">
                     </p><br>
@@ -265,7 +268,7 @@
                         <input type="time" id="LeavingTime" name="LeavingTime" value="">
                     </p><br>
                     <p>
-                        <label for="DurationOfTheStay">-DURATION OF THE STAY(Hours): </label><br>
+                        <label for="DurationOfTheStay">-DURATION OF THE STAY(Only 1 hour per booking): </label><br>
                         <input type="number" id="DurationOfTheStay" name="DurationOfTheStay" value="" min="0">
                     </p><br>
                     <p>
@@ -273,7 +276,7 @@
                     </p><br>
                     <p>
                         <label for="Cash">Cash</label> 
-                        <input type="radio" id="Cash" name="PaymentMethod" value="Cash" checked>
+                        <input type="radio" id="Cash" name="PaymentMethod" value="Cash">
                     </p>
                     <p>
                         <label for="Cheque">Cheque</label>
@@ -287,6 +290,7 @@
             </fieldset>
         </section>
         </div>
+        <!---Table of room booking details-->
         <section class="roomTable">
             <fieldset>
                 <legend>ROOM BOOKING DETAILS</legend>
@@ -330,7 +334,7 @@
                     </tr>
                     <tr>
                         <td>Choice of rooms</td>
-                        <td><span id="-choiceOfrooms"></span></td>
+                        <td><span id="-choiceOfRooms"></span></td>
                     </tr>
                     <tr>
                         <td>Cost per room</td>
@@ -366,7 +370,7 @@
                     </tr>
                     <tr>
                         <td>Meals charge(kids above 5 years of age)</td>
-                        <td><span id="-choice of rooms"></span></td>
+                        <td><span id="-mealsCharge"></span></td>
                     </tr>
                     <tr>
                         <td>Arrival time</td>
@@ -386,7 +390,7 @@
                     </tr>
                     <tr>
                         <td>Extra bed charge</td>
-                        <td><span id="-extraBedCharege"></span></td>
+                        <td><span id="-extraBedCharge"></span></td>
                     </tr>
                     <tr>
                         <td>Wifi</td>
@@ -399,6 +403,10 @@
                     <tr>
                         <td>Promo code</td>
                         <td><span id="-promoCode"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Promo code off amount</td>
+                        <td><span id="-promoCodeOff"></span></td>
                     </tr>
                     <tr>
                         <td>Payment method</td>
@@ -432,6 +440,7 @@
                 <p id="roomOutput"></p>
             </fieldset>
         </section>
+        <!---Table of adventure booking details-->
         <section class="adventureTable">
             <fieldset>
                 <legend>Adventure booking details</legend>
@@ -530,12 +539,20 @@
                         <td><span id="--guidePerAdult"></span></td>
                     </tr>
                     <tr>
+                        <td>Number of adults need guidance</td>
+                        <td><span id="--adultsGuidance"></span></td>
+                    </tr>
+                    <tr>
                         <td>Total Guide charge for adults</td>
                         <td><span id="--guideChargeAdult"></span></td>
                     </tr>
                     <tr>
                         <td>Guide charge per kid</td>
                         <td><span id="--guidePerKid"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Number of children need guidance</td>
+                        <td><span id="--childrenGuidance"></span></td>
                     </tr>
                     <tr>
                         <td>Total Guide charge for kids</td>
@@ -576,6 +593,10 @@
                     <tr>
                         <td>Total bill</td>
                         <td><span id="--totalBill"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Note :</td>
+                        <td>The current booking will be reserved only for one hour</td>
                     </tr>
                 </table>
                 <button id="adventureButton">Book adventure</button>
@@ -634,7 +655,7 @@
             </div>
         </section>
 
-
+        <script src="./main.js"></script>
     </body>
 </html>
 
