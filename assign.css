@@ -505,31 +505,20 @@ iframe{
 .Booking-header{
     min-height: 100vh;
     width: 100%;
-    background-image:url("private-villas-in-sri-lanka-categorythumbnail.jpg");
+    background-image:url("Hotel\ room.jpeg");
     background-position: center;
     background-size: cover;
     position: relative;
 }
-/*Image section*/
-.Booking-Images{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    margin-top: 50px;
-    background-color: #F7F2D7;
-    
-    box-sizing: border-box;
-    display: flex;
-    
-    
-    
-}
-.Booking-Images img{
-    width: 30%;
-    margin-left: 34px;
+.Booking-text{
+    width: 90%;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 1%;
+    font-size: 20px;
+    text-align: center;
 }
 /*Booking details section*/
+/*Room booking form*/
 .booking{
     background-color: #F7F2D7;
     width: 40%;
@@ -538,13 +527,12 @@ iframe{
     float: left;
 }
 label{
-    font-family: fantasy;
+    font-family: 'Poppins', sans-serif;
 }
 input{
     height: 40px;
     font-style: italic;
     font-size: 15px;
-    border-radius: 10px;
     border: 1px solid;
 }
 input:hover{
@@ -557,10 +545,12 @@ input:hover{
 }
 #boo{
     width: 100%;
+    height: 500px;
 }
 .bookingSection{
    display: flex;
 }
+/*Adventure booking form*/
 .booking1{
     width: 40%;
     margin-top: 5%;
@@ -571,12 +561,15 @@ input:hover{
     width: 100%;
     height: 180px;
 }
+/*Table of room booking details*/
 .roomTable table{
-    border: 2px solid black;
+    border: 1px solid black;
     width: 100%;
 }
 .roomTable th{
-    border: 2px solid;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
 }
 .roomTable td{
     border: 2px solid;
@@ -587,9 +580,10 @@ input:hover{
     background-color: #F7F2D7;
     margin-top: 5%;
 } 
-.roomTable tr:hover{
+.roomTable tr{
+    font-family: 'Poppins', sans-serif;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(0,212,255,1) 83%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(56, 56, 118) 19%, rgb(0, 195, 255) 83%);
     color: white;
 }
 #roomButton{
@@ -655,13 +649,27 @@ input:hover{
     color: white;
     font-family: fantasy;
 }
+#roomPay{
+    padding: 1%;
+    cursor: pointer;
+    font-family: fantasy;
+    float: left;
+    margin: 1%;
+}
+#roomPay:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(0,212,255,1) 83%);
+    color: white;
+}
 /*Details table of adventure booking*/
 .adventureTable table{
-    border: 2px solid black;
+    border: 1px solid black;
     width: 100%;
 }
 .adventureTable th{
-    border: 2px solid;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
 }
 .adventureTable td{
     border: 2px solid;
@@ -672,9 +680,10 @@ input:hover{
     background-color: #F7F2D7;
     margin-top: 5%;
 } 
-.adventureTable tr:hover{
+.adventureTable tr{
+    font-family: 'Poppins', sans-serif;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(0,212,255,1) 83%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(56, 56, 118) 19%, rgb(0, 195, 255) 83%);
     color: white;
 }
 #adventureButton{
@@ -702,8 +711,20 @@ input:hover{
     color: white;
     font-family: fantasy;
 }
+#adventurePay{
+    padding: 1%;
+    cursor: pointer;
+    font-family: fantasy;
+    float: left;
+    margin: 1%;
+}
+#adventurePay:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(0,212,255,1) 83%);
+    color: white;
+}
 /*Adding media query for all  main pages*/
-@media(max-width:700px){
+@media only screen and (max-width:600px){
     /*Home page*/
     .Text h1{
         font-size: 12px;
@@ -838,7 +859,7 @@ input:hover{
    #loyaltyOutput{
     margin-top: 7%;
    }
-    
+   
     
 
 
