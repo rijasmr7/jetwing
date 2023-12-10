@@ -464,8 +464,10 @@ function roomOutput(){
     } else{
         loyaltyPoints = 0;
     }
+    swal("Success!", "Your booking is reserved. Thank you!", "success");
     } else{
         outputRoom.innerText = `Please!!! click 'Ok' to book---`;
+        swal("Sorry!", "Opps, something went wrong. Please try again.", "error");
     }
 }
 function loyalty(){
@@ -483,8 +485,10 @@ function favorite(){
     localStorage.removeItem(favorites);
     //adding favorites array to local storage
     localStorage.setItem('Add to favorite order details', JSON.stringify(favorites));
+    swal("Success!", "Your order have been added to favorites. Thank you!", "success");
     } else{
         console.log("Unsuccessful!!!");
+        swal("Sorry!", "Opps, something went wrong. Please try again.", "error");
     }
 }
 //function for adventure cost
@@ -572,9 +576,12 @@ function adventure(){
     if (confirm(`Thank you for booking with us and enjoy your one hour adventure session with Jetwing\nNumber of local adults = ${numSlAdults}\nCharge for local adults = ${numSlAdults} X Rs.5000 : Rs.${costSlAdults}\nNumber of local children = ${numSlChildren}\nCharge for local children = ${numSlChildren} X Rs.2000 : Rs.${costSlChildren}\nNumber of foreign adults = ${numForeignAdults}\nCharge for foreign adults = ${numForeignAdults} X Rs.10000 : Rs.${costForeignAdults}\nNumber of foreign children = ${numForeignChildren}\nCharge for foreign children = ${numForeignChildren} X Rs.5000 : Rs.${costForeignChildrenAd}\n------------------------\nGuide for diving = ${guideValue}\nNumber of adults need guidance = ${adultsGuideNum}\nGuide charge for adults = Rs.1000 X Rs.${adultsGuideCost}\nNumber of Children need guidance = ${childrenGuideNum}\nGuide charge for Children = Rs.500 X Rs.${childrenGuideCost}\n------------------------\nYour total bill = Rs.${adventureCost}\n------------------------\nHave a nice day!!!`)){
 
     outAdventure.innerText = `Thank you for booking with us and enjoy your adventure with Jetwing\nNumber of local adults = ${numSlAdults}\nCharge for local adults = ${numSlAdults} X Rs.5000 : Rs.${costSlAdults}\nNumber of local children = ${numSlChildren}\nCharge for local children = ${numSlChildren} X Rs.2000 : Rs.${costSlChildren}\nNumber of foreign adults = ${numForeignAdults}\nCharge for foreign adults = ${numForeignAdults} X Rs.10000 : Rs.${costForeignAdults}\nNumber of foreign children = ${numForeignChildren}\nCharge for foreign children = ${numForeignChildren} X Rs.5000 : Rs.${costForeignChildrenAd}\n------------------------\nGuide for diving = ${guideValue}\nNumber of adults need guidance = ${adultsGuideNum}\nGuide charge for adults = Rs.1000 X Rs.${adultsGuideCost}\nNumber of Children need guidance = ${childrenGuideNum}\nGuide charge for Children = Rs.500 X Rs.${childrenGuideCost}\n------------------------\nYour total bill = Rs.${adventureCost}\n------------------------\nHave a nice day!!!`;
+    swal("Success!", "Your booking is reserved. Thank you!", "success");
     costCurrentAdventure.innerText = `0`;
     costOverallAdventure.innerText = `0`;} 
+    
     else{
         outAdventure.innerText = `Please!!! click 'ok' to book---`;
+        swal("Sorry!", "Opps, something went wrong. Please try again.", "error");
     }
 }
