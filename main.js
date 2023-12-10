@@ -448,6 +448,8 @@ function roomOutput(){
 
     overallBookingRoom.innerText = `${count}`;
     costOverallRoom.innerText = `${overall.toFixed(2)}`;
+    currentBookingRoom.innerText = ``;
+    costCurrentRoom.innerText = `0`;
     if (numRooms > 3){
         loyaltyPoints = 20;
         overallLoyalty += loyaltyPoints;
